@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/studyProject.iml" filepath="$PROJECT_DIR$/studyProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-api/project-api.iml" filepath="$PROJECT_DIR$/project-api/project-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-service/project-service.iml" filepath="$PROJECT_DIR$/project-service/project-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studyproject.iml" filepath="$PROJECT_DIR$/studyproject.iml" />
     </modules>
   </component>
 </project>
