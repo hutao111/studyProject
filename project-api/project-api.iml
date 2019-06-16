@@ -72,13 +72,6 @@
     <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.1.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-configuration-processor:2.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-amqp:2.1.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-messaging:5.1.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.1.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.amqp:spring-rabbit:2.1.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.amqp:spring-amqp:2.1.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:1.2.4.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:5.4.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-elasticsearch:2.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-elasticsearch:3.1.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.1.8.RELEASE" level="project" />
@@ -125,13 +118,15 @@
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:parent-join-client:6.4.3" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:rank-eval-client:6.4.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.8" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch.plugin:transport-netty4-client:6.4.3" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-buffer:4.1.36.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-codec:4.1.36.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-codec-http:4.1.36.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-resolver:4.1.36.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-amqp:2.1.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-messaging:5.1.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.1.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.amqp:spring-rabbit:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.amqp:spring-amqp:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:1.2.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:5.4.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:2.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:2.1.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:2.1.8.RELEASE" level="project" />
@@ -140,7 +135,10 @@
     <orderEntry type="library" name="Maven: io.lettuce:lettuce-core:5.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-common:4.1.36.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-handler:4.1.36.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-buffer:4.1.36.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec:4.1.36.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-transport:4.1.36.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-resolver:4.1.36.Final" level="project" />
     <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.2.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-mail:2.1.5.RELEASE" level="project" />
@@ -153,6 +151,8 @@
     <orderEntry type="library" name="Maven: com.mchange:mchange-commons-java:0.2.15" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.1.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:2.1.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.8" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.8" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.8" level="project" />
@@ -167,7 +167,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.1.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.1.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.1.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.16" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.35" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.8" level="project" />
     <orderEntry type="library" name="Maven: io.swagger:swagger-annotations:1.5.13" level="project" />
   </component>
