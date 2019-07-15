@@ -8,6 +8,10 @@ import com.baomidou.mybatisplus.extension.activerecord.Model;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -23,7 +27,8 @@ import java.util.Date;
 @Data
 @Api(tags = "Classify", description = "")
 @TableName("classify")
-public class DocumentClassify extends Model<DocumentClassify> {
+//@Document(indexName = "study",type = "classify")
+public class DocumentClassify extends Model<DocumentClassify>{
 
     private static final long serialVersionUID = 1L;
 
