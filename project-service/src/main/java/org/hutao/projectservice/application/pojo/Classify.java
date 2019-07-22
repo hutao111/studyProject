@@ -26,17 +26,17 @@ import java.util.Date;
  */
 @Data
 @Api(tags = "Classify", description = "")
-@Document(indexName = "classify",type = "classify")
+@Document(indexName = "hh",type = "classify")
 public class Classify {
 
     @Id
-    private Long id;
+    private String id;
 
     @ApiModelProperty(value = "分类父id   一级分类则为0")
-    private Long parentId;
+    private String parentId;
 
     @ApiModelProperty(value = "顶层节点id   一级分类则为0")
-    private Long rootId;
+    private String rootId;
 
     @ApiModelProperty(value = "分类层级")
     private Integer layer;
@@ -54,16 +54,14 @@ public class Classify {
     @ApiModelProperty(value = "是否已删除 0：未删除、1：已删除 默认为0")
     private Integer deleted;
 
-
-
     @ApiModelProperty(value = "站点id")
-    private Long siteId;
+    private String siteId;
 
     @ApiModelProperty(value = "组织id")
-    private Long orgId;
+    private String orgId;
 
     @ApiModelProperty(value = "企业id")
-    private Long companyId;
+    private String companyId;
 
 
 
