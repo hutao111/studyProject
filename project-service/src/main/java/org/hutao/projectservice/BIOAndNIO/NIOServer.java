@@ -3,10 +3,7 @@ package org.hutao.projectservice.BIOAndNIO;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
-import java.nio.channels.SelectionKey;
-import java.nio.channels.Selector;
-import java.nio.channels.ServerSocketChannel;
-import java.nio.channels.SocketChannel;
+import java.nio.channels.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
@@ -98,11 +95,12 @@ public class NIOServer {
         System.out.println("服务器发送了广播。。。");
 
         for (SelectionKey key : selector.keys()) {
-            SocketChannel targetChannel = (SocketChannel) key.channel();
+            Channel targetChannel = key.channel();
 
             if (targetChannel instanceof SocketChannel && targetChannel != channel) {
+                SocketChannel destChannel = (SocketChannel) targetChannel;
                 ByteBuffer wrap = ByteBuffer.wrap(msg.getBytes());
-                targetChannel.write(wrap);
+                destChannel.write(wrap);
 
             }
 
