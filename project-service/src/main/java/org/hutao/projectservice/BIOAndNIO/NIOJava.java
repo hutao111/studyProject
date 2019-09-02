@@ -1,13 +1,17 @@
 package org.hutao.projectservice.BIOAndNIO;
 
-import org.junit.Test;
+
+
+
+
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
+
 
 public class NIOJava {
 
@@ -37,24 +41,24 @@ public class NIOJava {
     }
 
     @Test  //读取某文件的信息
-    public void test2()throws Exception{
+    public void test2() throws Exception {
         File file = new File("taoge.txt");
         FileInputStream fileInputStream = new FileInputStream(file);
 
         FileChannel channel = fileInputStream.getChannel();
 
 
-        ByteBuffer byteBuffer =  ByteBuffer.allocate((int)file.length());
+        ByteBuffer byteBuffer = ByteBuffer.allocate((int) file.length());
 
         channel.read(byteBuffer);
 
-        System.out.println(new String( byteBuffer.array()));
+        System.out.println(new String(byteBuffer.array()));
         fileInputStream.close();
 
     }
 
     @Test    //copy文件
-    public void test3()throws  Exception{
+    public void test3() throws Exception {
         File file = new File("taoge.txt");
         FileInputStream inputStream = new FileInputStream(file);
         FileOutputStream outputStream = new FileOutputStream("d://taoge1.txt");
@@ -64,7 +68,7 @@ public class NIOJava {
 
 //        ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
 
-        channel2.transferFrom(channel,0,file.length());
+        channel2.transferFrom(channel, 0, file.length());
         outputStream.close();
         inputStream.close();
 
