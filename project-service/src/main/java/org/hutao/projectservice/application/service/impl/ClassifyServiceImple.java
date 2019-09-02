@@ -7,6 +7,7 @@ import org.hutao.projectapi.vo.DocumentClassifyVo;
 import org.hutao.projectapi.vo.SecondClassifyVo;
 import org.hutao.projectservice.application.mapper.ClassifyMapper;
 import org.hutao.projectservice.application.service.ClassifyService;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -183,6 +184,8 @@ public class ClassifyServiceImple extends ServiceImpl<ClassifyMapper, DocumentCl
             return false;
 
     }
+
+
 
 
 }

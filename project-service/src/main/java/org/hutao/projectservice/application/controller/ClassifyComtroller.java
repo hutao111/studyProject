@@ -5,12 +5,14 @@ import org.hutao.projectapi.domain.DocumentClassify;
 import org.hutao.projectapi.vo.DocumentClassifyTreeVo;
 import org.hutao.projectapi.vo.ParamsVo;
 import org.hutao.projectapi.vo.SecondClassifyVo;
+import org.hutao.projectservice.application.mapper.ClassifyMapper;
 import org.hutao.projectservice.application.service.ClassifyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -26,6 +28,8 @@ public class ClassifyComtroller {
 
     @Autowired
     private ClassifyService classifyService;
+    @Autowired
+    private ClassifyMapper classifyMapper;
 
 
     @PostMapping("/save")
@@ -112,5 +116,13 @@ public class ClassifyComtroller {
     @GetMapping("/queryById")
     public DocumentClassify queryById(@RequestParam(value = "id") Long id) {
         return classifyService.getById(id);
+    }
+
+    @GetMapping("/hh")
+    public void hh() {
+        List<Map<String, Object>> listMap = classifyMapper.getListMap();
+        listMap.forEach(a->{
+            System.out.println(a.toString());
+        });
     }
 }

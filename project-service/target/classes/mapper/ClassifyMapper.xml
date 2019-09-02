@@ -66,4 +66,8 @@
             and c.id = #{classifyId} or c.parent_id =#{classifyId} or c.root_id = #{classifyId}
         </if>
     </select>
+
+    <select id="getListMap" resultType="Map">
+        select c.id, c.name,c.parent_id from classify c
+    </select>
 </mapper>

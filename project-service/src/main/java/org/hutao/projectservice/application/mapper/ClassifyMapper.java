@@ -7,6 +7,7 @@ import org.hutao.projectapi.domain.DocumentClassify;
 import org.hutao.projectapi.vo.DocumentClassifyVo;
 
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -34,4 +35,5 @@ public interface ClassifyMapper extends BaseMapper<DocumentClassify> {
 
     List<Long> queryChildrenClassify(@Param("classifyId") Long classifyId, @Param("companyId") Long companyId, @Param("siteId") Long siteId, @Param("orgId") Long orgId);
 
+    public  List<Map<String, Object>> getListMap();
 }

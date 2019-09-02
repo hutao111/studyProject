@@ -60,6 +60,7 @@ public class RabbitMQTest {
         map.put("msg","第一个消息");
         map.put("data", Arrays.asList("3",1,true));
 
+
         rabbitTemplate.convertAndSend("hutao-topic", "123", classify);
     }
 }
